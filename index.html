@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Calculadora IMC</header>
     <section>
-        <p>
-            Sexo:
-            <input type="radio" name="radsex" id="masc" checked>
-            <label for="masc">Masculino</label>
-            <input type="radio" name="radsex" id="fem">
-            <label for="fem">Feminino</label>
-        </p>
-        
-        <p>
-            Altura:
-            <input type="number" name="Altura" id="altura" min="0">
-        </p>
-       
-        <p>
-            Peso:
-            <input type="number" name="Peso" id="peso" min="0">
-        </p>
-
-        <p>
-            <input type="button" value="Calcular" id="calcular" >
-        </p>
-        <div id="res">
+        <h1>
+            <p>
+                Calculadora IMC
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            
+            <p>
+                Altura:
+                <input type="number" name="Altura" id="altura" min="0" placeholder="Em metros" class="box">
+            </p>
+            <p>
+                Peso:
+                <input type="number" name="Peso" id="peso" min="0" placeholder="Em Kilogramas" class="box">
+            </p>
+            <p>
+                <input type="button" value="Calcular" id="calcular" class="botao" >
+            </p>
+        <h1>
+        <div id="res" class="res">
 
         </div>
     </section>
